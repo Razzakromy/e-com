@@ -1,2 +1,2 @@
-# e-com
+# redStore
  for ayons mam
