@@ -1,386 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
     <title>RedStore|E-Commerce site</title>
-    <link rel="Stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" integrity="sha512-+1GzNJIJQ0SwHimHEEDQ0jbyQuglxEdmQmKsu8KI7QkMPAnyDrL9TAnVyLPEttcTxlnLVzaQgxv2FpLCLtli0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
-    <div class="header">
-    <div clas="container">
-       <div clas="navbar">
-        <div class="logo">
-            <img src="Images/logo.png" width="125px">
-        </div>
-    
-        <nav>
-            <ul id="MenuItems">
-                <li><a href="">Home</a></li>
-                <li><a href="">Products</a></li>   
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Account</a></li>
-            </ul>
-            <img src="Images/cart.png" width="30px",height="30px">
-            <img src="Images/menu.png" class="menu-icon" onclick="menutoggle()">
-        </nav>
-    </div>
-           
-            
-       
-        
-           
-    <div class="row">
-       
-        <div class="col-2">
-        
-            <h1>Give Your Workout<br> A New Style</h1>
-            <p>hgjhgugujgjugjughiiuuyiugu</p>
-            <a href="" class="btn">Explore Now &#8594;</a>
-        </div>
-        <div class="col-2">
-            <img src="Images/Banner.jpg">
-        </div>
-             
-        
-        
-    </div>   
-</div> 
-        
-    
-</div>
-    
-        
- <!------featured products------>      
-    <section class="produact-slider">
-        <!-----heading----------->
-        <div clas="slider-heading">
-        <h3>All Models.<span>Take Your Pick</span></h3>
-        </div>
-
-
-        
-
-
-
-
-        <ul id="autoWidth" class="cs-hidden">
-        
-        <!----------1----------------------->
-        <li class="item-a">
-            <!---------product-box----------->
-        <div class="product-box">
-            <a href="#">
-                <!-------heading------>
-                <strong>iPhone 12 Pro</strong>
-                <!----img--------->
-                <img src="Images/Product1.jpg" alt="iPhone 12 Pro">
-                <!-----color------------->
-                <div class="available-colors">
-                    <div class="product-color" style="background-color: burlywood;"></div>
-                    <div class="product-color" style="background-color:blue"></div>
-                    <div class="product-color" style="background-color: bisque;"></div>
-                    <div class="product-color" style="background-color: #6e6e73  "></div>
-                    <div class="product-color" style="background-color: antiquewhite;"></div>
-
-                </div>
-                <!-----price by----->
-                <div class="buy-price">
-                    <!-----price---->
-                    <p>$50</p>
-                    <!----btn----->
-                    <a href="#" class="buy-btn">Buy</a>
-                </div>    
+    <!-- Menu Start -->
+    <nav class="navbar navbar-expand-lg px-0 py-3">
+        <div class="container-xl">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="Images/logo.png" alt="redStore">
             </a>
-
+            <!-- Navbar toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <!-- Nav -->
+                <div class="navbar-nav mx-lg-auto">
+                    <a class="nav-item nav-link active" href="#" aria-current="page">Home</a>
+                    <a class="nav-item nav-link" href="#">Products</a>
+                    <a class="nav-item nav-link" href="#">About</a>
+                    <a class="nav-item nav-link" href="#">Contact</a>
+                    <a class="nav-item nav-link" href="#">My Account</a>
+                </div>
+                <!-- Right navigation -->
+                <div class="navbar-nav ms-lg-4">
+                    <a class="nav-item nav-link" href="#">Cart <i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <!-- Action -->
+                <div class="d-flex align-items-lg-center mt-3 mt-lg-0 me-1">
+                    <a href="#" class="btn btn-sm btn-primary w-full w-lg-auto login">
+                        Login
+                    </a>
+                </div>
+                <div class="d-flex align-items-lg-center mt-3 mt-lg-0">
+                    <a href="#" class="btn btn-sm btn-primary w-full w-lg-auto">
+                        Admin Login
+                    </a>
+                </div>
+            </div>
         </div>
-        
-    </li>
-    
-    <!----------2----------------------->
-    <li class="item-a">
-        <!---------product-box----------->
-    <div class="product-box">
-        <a href="#">
-            <!-------heading------>
-            <strong>iPhone 12 Pro</strong>
-            <!----img--------->
-            <img src="Images/Product2.jpg" alt="iPhone 12 Pro">
-            <!-----color------------->
-            <div class="available-colors">
-                <div class="product-color" style="background-color: burlywood;"></div>
-                <div class="product-color" style="background-color:blue"></div>
-                <div class="product-color" style="background-color: bisque;"></div>
-                <div class="product-color" style="background-color: #6e6e73  "></div>
-                <div class="product-color" style="background-color: antiquewhite;"></div>
+    </nav>
+    <!-- Menu End -->
 
+    <!-- Banner Start -->
+    <section class="banner">
+        <div class="row d-flex align-items-center">
+            <div class="col-lg-5">
+                <div class="container">
+                    <div class="banner_text ms-5">
+                        <h1>Give Your Workout<br> A New Style</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dignissimos, dolorum earum
+                            magnam id aut placeat debitis sed eum dolor.</p>
+                        <a href="#" class="btn btn-primary"><i class="fa-solid fa-circle-arrow-right"></i> Explore
+                            Now</a>
+                    </div>
+                </div>
             </div>
-            <!-----price by----->
-            <div class="buy-price">
-                <!-----price---->
-                <p>$50</p>
-                <!----btn----->
-                <a href="#" class="buy-btn">Buy</a>
-            </div>    
-        </a>
-
-    </div>
-    
-</li>
-
-<!----------3----------------------->
-<li class="item-a">
-    <!---------product-box----------->
-<div class="product-box">
-    <a href="#">
-        <!-------heading------>
-        <strong>iPhone 12 Pro</strong>
-        <!----img--------->
-        <img src="Images/Product3.jpg" alt="iPhone 12 Pro">
-        <!-----color------------->
-        <div class="available-colors">
-            <div class="product-color" style="background-color: burlywood;"></div>
-            <div class="product-color" style="background-color:blue"></div>
-            <div class="product-color" style="background-color: bisque;"></div>
-            <div class="product-color" style="background-color: #6e6e73  "></div>
-            <div class="product-color" style="background-color: antiquewhite;"></div>
-
+            <div class="col-lg-7">
+                <div class="banner_img">
+                    <img src="Images/banner.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
         </div>
-        <!-----price by----->
-        <div class="buy-price">
-            <!-----price---->
-            <p>$50</p>
-            <!----btn----->
-            <a href="#" class="buy-btn">Buy</a>
-        </div>    
-    </a>
 
-</div>
-
-</li>
-            
-            
-            
-            
-            
-            
-            
-            
-<!----------4----------------------->
-    <li class="item-a">
-        <!---------product-box----------->
-    <div class="product-box">
-        <a href="#">
-            <!-------heading------>
-            <strong>iPhone 12 Pro</strong>
-            <!----img--------->
-            <img src="Images/Product4.jpg" alt="iPhone 12 Pro">
-            <!-----color------------->
-            <div class="available-colors">
-                <div class="product-color" style="background-color: burlywood;"></div>
-                <div class="product-color" style="background-color:blue"></div>
-                <div class="product-color" style="background-color: bisque;"></div>
-                <div class="product-color" style="background-color: #6e6e73  "></div>
-                <div class="product-color" style="background-color: antiquewhite;"></div>
-
-            </div>
-            <!-----price by----->
-            <div class="buy-price">
-                <!-----price---->
-                <p>$50</p>
-                <!----btn----->
-                <a href="#" class="buy-btn">Buy</a>
-            </div>    
-        </a>
-
-    </div>
-    
-</li>
-            
-            
-            
-            
-            
-<!----------5----------------------->
-    <li class="item-a">
-        <!---------product-box----------->
-    <div class="product-box">
-        <a href="#">
-            <!-------heading------>
-            <strong>iPhone 12 Pro</strong>
-            <!----img--------->
-            <img src="Images/Product5.jpg" alt="iPhone 12 Pro">
-            <!-----color------------->
-            <div class="available-colors">
-                <div class="product-color" style="background-color: burlywood;"></div>
-                <div class="product-color" style="background-color:blue"></div>
-                <div class="product-color" style="background-color: bisque;"></div>
-                <div class="product-color" style="background-color: #6e6e73  "></div>
-                <div class="product-color" style="background-color: antiquewhite;"></div>
-
-            </div>
-            <!-----price by----->
-            <div class="buy-price">
-                <!-----price---->
-                <p>$50</p>
-                <!----btn----->
-                <a href="#" class="buy-btn">Buy</a>
-            </div>    
-        </a>
-
-    </div>
-    
-</li>
-    
-    
-    </ul>
-    
-    
     </section>
-   
-<!------latest products------>
-     <h2 class="title">Latest Products</h2>
-         <div class="row">
-            <div class="col-4">
-                <img src="Images/Product10.jpg">
-                <h4>Blue Shoe</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
+    <!-- Banner End -->
+
+    <!-- Exclusive Start -->
+    <section class="exclusive banner py-3">
+        <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-lg-7">
+                <div class="banner_img">
+                    <img src="Images/smartband.png" class="img-fluid" alt="">
                 </div>
-                <p>$50.00</p>
-            
             </div>
-            <div class="col-4">
-                <img src="Images/Product11.jpg">
-                <h4>Blue Shoe</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>$80.00</p>
-            
+            <div class="col-lg-5">
+                    <div class="banner_text">
+                        <p>Exclusively available on website</p>
+                        <h2>Smart Band 5</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dignissimos, dolorum earum.</p>
+                        <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i> Buy
+                            Now</a>
+                    </div>
             </div>
-            <div class="col-4">
-                <img src="Images/Product12.jpg">
-                <h4>Blue Shoe</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>$50.00</p>
-            
-            </div>
-            <div class="col-4">
-                <img src="Images/Product13.jpg">
-                <h4>Blue Shoe</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>$50.00</p>
-            
-            </div>
-        
-       </div>  
-    </div> 
-    
- <!------------offer--------------->
-    <div class="offer">
-        <div class="small-container">
+        </div>
+    </div>
+    </section>
+    <!-- Exclusive End -->
+
+    <!-- Product Start -->
+    <section class="product">
+        <div class="container">
             <div class="row">
-                <div class="col-2">
-                    <img src="Images/exclusive.png" class="offer-img">
-                </div>
-                <div class="col-2">
-                <p>Exclusively available on website</p>
-                <h1>Smart Band4</h1>
-                    <small>hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</small>
-                    <a href="" class="btn">Buy Now &#8594;</a>
+                <div class="col-lg-12">
+                    <div class="product_heading">
+                        <h3 class="text-center">All Products</h3>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-<!---------------footer------------------>
-    <div class="footer">
-    <div class="container">
-        <div class+"row">
-            <div class="footer-col-1">
-                <h3>Download Our App</h3>
-                <p>Download App for Android and ios mobile phone</p>
-                <div class="app-logo">
-                    <img src="Images/play-store.png">
-                    <img src="Images/app-store.png">
-                    
-                </div>
-            </div>
-            <div class="footer-col-2">
-                <img src="Images/logo.png">
-                <p>Our Purpose Is To Sustainably Make The Pleasure and Benefits Of Sports Accessible To The Many.</p>
-            </div>
-            <div class="footer-col-3">
-                <h3>Useful Links</h3>
-                <ul>
-                <li>Coupons</li>
-                <li>Blog Posty</li>
-                <li>Return Policy</li>
-                <li>Join Affiliate</li>
-                </ul>
-            </div>
-            
-            <div class="footer-col-4">
-                <h3>Follow Us</h3>
-                <ul>
-                <li>Facebook</li>
-                <li>Twitter</li>
-                <li>Instragam</li>
-                <li>YouTube</li>
-                </ul>
-            </div>
-        </div>
-        
-        <hr>
-        <p class="copyright">Copyright 2023</p>
-        </div>
-    </div>
-    
+    </section>
+    <!-- Product End -->
 
-
- <!---------------js----------------------->
-    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
-    
-   
-    <script> 
-    $(document).ready(function() {
-        $('#autoWidth').lightSlider({
-            autoWidth:true,
-            loop:true,
-            onSliderLoad: function() {
-                $('#autoWidth').removeClass('cS-hidden');
-                } 
-        });  
-    });
-        
-    </script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
